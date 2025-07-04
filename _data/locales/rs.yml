@@ -1,0 +1,87 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: Članak
+  category: Kategorija
+  tag: Oznaka
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: Početna
+  categories: Kategorije
+  tags: Oznake
+  archives: Arhiva
+  about: O meni
+
+# the text displayed in the search bar & search results
+search:
+  hint: Pretraga
+  cancel: Otkaži
+  no_results: Ups! Nema pronađenih članaka.
+
+panel:
+  lastmod: Nedavno ažurirano
+  trending_tags: Popularne oznake
+  toc: Sadržaj
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: Ovaj članak je licenciran od strane autora pod :LICENSE_NAME.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: Neka prava zadržana.
+  verbose: >-
+    Svi članci na ovoj stranici su licencirani pod Creative Commons Attribution 4.0 (CC BY 4.0), osim ako nije drugačije navedeno.
+    
+#meta: Powered by :PLATFORM with :THEME theme
+
+not_found:
+  statement: Izvinite, ovaj link ne vodi ka postojećem resursu.
+
+notification:
+  update_found: Nova verzija je dostupna.
+  update: Nova verzija
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Autor
+  posted: Objavljeno
+  updated: Ažurirano
+  words: Reči
+  pageview_measure: Pregledi
+  read_time:
+    unit: Min 
+    prompt: Vreme čitanja
+  relate_posts: Pročitajte dalje
+  share: Podeli
+  button:
+    next: Sledeći članak
+    previous: Prethodni članak
+    copy_code:
+      succeed: Kopirano!
+    share_link:
+      title: Kopiraj link
+      succeed: Link je kopiran!
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: "%d.%m.%Y"
+    dayjs: "DD.MM.YYYY"
+
+# categories page
+categories:
+  category_measure:
+    singular: Kategorija
+    plural: Kategorije
+  post_measure:
+    singular: Članak
+    plural: Članci
