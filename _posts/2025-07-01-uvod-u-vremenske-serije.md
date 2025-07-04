@@ -9,6 +9,24 @@ pin: true
 math: true
 ---
 
+<script src="https://giscus.app/client.js"
+        data-repo="golubovicnikola/golubovicnikola.github.io"
+        data-repo-id="R_kgDOO1LoLA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO1LoLM4CseOJ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="hbs"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+## Uvod
 Vremenske serije su niz (serija) uzoraka neke slučajne promenljive beležene u jednakim vremenskim intervalima.
 
 Vreme #1, posmatrana vrednost (u vremenu t = 1)
@@ -25,8 +43,7 @@ Primeri vremenskih serija:
 
 
 
-
-## Analiza i predikcija vremenskih serija
+### Analiza i predikcija vremenskih serija
 
 Analiziramo vremensku seriju kada želimo više da saznamo o samim podacima, kao i o povezanosti podataka i njihovoj strukturi. Koristeći modele za predikciju, nastojimo da predvidimo što tačniju dalju vrednost vremenskih serija.
 
@@ -38,7 +55,7 @@ Analiza vremenske serije podrazumeva razvijanje modela koji će na najbolji nač
 
 Ovo često podrazumeva uvođenje statističke pretpostavke (hipoteze) o podacima i kao što smo napomenuli, dekompoziciju vremenske serije na njene komponente.
 
-## Predstavljanje vremenskih serija
+### Predstavljanje vremenskih serija
 
 Prva stvar koja se radi u analizi vremenske serije - jeste njeno iscrtavanje. Grafikoni omogućuju vizuelizaciju podataka i brz uvid u same karakteristike podataka, uključujući moguće šablone (rast ili pad vrednosti u periodičnim trenucima), neubičajne vrednosti, vezu među promenljivama... Karakteristike podataka su bitne jer u potpunosti utiču na dalji uspeh u predikciji. 
 
