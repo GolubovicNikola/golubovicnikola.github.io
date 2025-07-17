@@ -1,0 +1,62 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the comments container
+  const commentsContainer = document.createElement('div');
+  commentsContainer.id = 'giscus-comments';
+  commentsContainer.className = 'mt-5';
+  commentsContainer.style.cssText = 'width: 100%; max-width: 100%; overflow: hidden; margin: 2rem 0; padding: 0 1rem;';
+  
+  // Find the footer and insert comments before it
+  const footer = document.querySelector('footer');
+  if (footer) {
+    footer.parentNode.insertBefore(commentsContainer, footer);
+  } else {
+    // Fallback: append to body if no footer found
+    document.body.appendChild(commentsContainer);
+  }
+  
+  // Giscus configuration
+  let giscusAttributes = {
+    "src": "https://giscus.app/client.js",
+    "data-repo": "{{ site.comments.giscus.repo }}",
+    "data-repo-id": "{{ site.comments.giscus.repo_id }}",
+    "data-category": "{{ site.comments.giscus.category }}",
+    "data-category-id": "{{ site.comments.giscus.category_id }}",
+    "data-mapping": "{{ site.comments.giscus.mapping | default: 'pathname' }}",
+    "data-strict": "0",
+    "data-reactions-enabled": "{{ site.comments.giscus.reactions_enabled | default: 1 }}",
+    "data-emit-metadata": "0",
+    "data-input-position": "{{ site.comments.giscus.input_position | default: 'bottom' }}",
+    "data-theme": "{{ site.comments.giscus.theme | default: 'preferred_color_scheme' }}",
+    "data-lang": "{{ site.comments.giscus.lang | default: 'en' }}",
+    "data-loading": "lazy",
+    "crossorigin": "anonymous",
+    "async": ""
+  };
+
+  let giscusScript = document.createElement("script");
+  Object.entries(giscusAttributes).forEach(([key, value]) => {
+    giscusScript.setAttribute(key, value);
+  });
+  
+  giscusScript.onload = function() {
+    console.log('Giscus loaded successfully');
+    setTimeout(() => {
+      const iframe = document.querySelector('iframe[src*="giscus"]');
+      if (iframe) {
+        iframe.style.display = 'block';
+        iframe.style.visibility = 'visible';
+        iframe.style.opacity = '1';
+        iframe.style.width = '100%';
+        iframe.style.maxWidth = '100%';
+        iframe.style.minHeight = '200px';
+        iframe.style.boxSizing = 'border-box';
+        console.log('Giscus iframe styled and constrained');
+      }
+    }, 500);
+  };
+
+  // Append the script to the comments container
+  commentsContainer.appendChild(giscusScript);
+});
+</script>

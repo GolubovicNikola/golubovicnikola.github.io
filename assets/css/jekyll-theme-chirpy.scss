@@ -1,0 +1,41 @@
+// ---
+// ---
+
+// /* prettier-ignore */
+// @use 'main
+// {%- if jekyll.environment == 'production' -%}
+//   .bundle
+// {%- endif -%}
+// ';
+
+// /* Giscus visibility fix for Chirpy */
+// .giscus, .giscus-frame {
+//   width: 100% !important;
+//   border: none !important;
+//   display: block !important;
+//   visibility: visible !important;
+//   opacity: 1 !important;
+//   min-height: 200px !important;
+// }
+
+// /* Fix for Chirpy's comment container */
+// #post-wrapper .post-content {
+//   iframe[src*="giscus"] {
+//     display: block !important;
+//     visibility: visible !important;
+//     opacity: 1 !important;
+//     width: 100% !important;
+//     min-height: 200px !important;
+//     border: none !important;
+//     background: transparent !important;
+//   }
+// }
+
+// /* Ensure comment section is visible */
+// .post-tail-wrapper {
+//   .post-comments {
+//     display: block !important;
+//     visibility: visible !important;
+//     opacity: 1 !important;
+//   }
+// }
