@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Da li domaćinstva u Srbiji zaista štede novac?
-description: Štednja je gotovo umetnost i nacionalni sport u Srbiji, nastao iz potreba i iskustava prethodnih generacija. Uz pomoć nekoliko linija koda i zvaničnih podataka, odgovorićemo da li domaćinstvima na kraju meseca nešto preostane.
+description: Štednja je gotovo umetnost i nacionalni sport u Srbiji, nastao iz potreba i iskustava prethodnih generacija.
 date: 2025-07-17
 author: nikola
 categories: [Data Science, Economics]
 tags: [data analysis, savings rate, Serbian economy]
-pin: true
+pin: false
 math: true
 comments: true
 image:
@@ -22,12 +22,12 @@ Vođen tom idejom, zaronio sam u zvanične podatke Republičkog zavoda za statis
 
 Ovo je putovanje kroz "Srpsku zagonetku štednje", viđenu očima jednog informatičara.
 
-### Prvi Nivo Analize: Nacionalna Slika
+### Prvi nivo analize: Nacionalna slika
 
-Osnovna jednačina je jednostavna: $$Prihodi - Rashodi = Štednja$$.<br> Kada ovu razliku podelimo sa prihodima, dobijamo **stopu štednje** – ključni pokazatelj finansijskog zdravlja. Pogledajmo kako se ta stopa kretala tokom godina u urbanim naseljima Srbije.
+Osnovna jednačina je jednostavna: **Prihodi - Rashodi = Štednja**. Kada ovu razliku podelimo sa prihodima, dobijamo **stopu štednje** – ključni pokazatelj finansijskog zdravlja. Pogledajmo kako se ta stopa kretala tokom godina u urbanim naseljima Srbije. Iako sam koristio urbana, krajnji rezultat je isti i za ruralna naselja.
 
 {% include_relative /_charts/savings_by_regions.html %} 
-
+Kompletan kod može se naći [ovde][github-repo] 🔗.
 ```python
 # Ovaj deo koda generiše grafikon stope štednje
 import plotly.express as px
@@ -38,6 +38,7 @@ fig = px.line(merged_df, x='god', y='stopa_stednje', color='nTer_income',
 fig.update_layout(xaxis_title='Godina', yaxis_title='Stopa štednje (%)')
 fig.show()
 ```
+
 Prvo što upada u oči je **dramatičan pad stope štednje u 2012. godini**. Ovaj pad nije slučajan. Ta godina je bila obeležena završetkom globalne finansijske krize iz 2008, čiji su efekti sa zakašnjenjem stigli do nas, ali i značajnom unutrašnjom neizvesnošću. Održani su parlamentarni i predsednički izbori koji su doneli **promenu vlasti**. Takvi periodi tranzicije i ekonomske neizvesnosti gotovo uvek utiču na poverenje i potrošača i privrede, što se jasno oslikava u sposobnosti domaćinstava da štede. Prihodi su stagnirali, dok su troškovi nastavili da rastu.
 
 ### Drugi nivo analize: Beograd protiv ostatka Srbije
@@ -92,6 +93,6 @@ Podaci nam govore da u Srbiji ne postoji jedna, već najmanje dve ekonomske pri�
 
 Sposobnost da se štedi nije samo odraz finansijske discipline; ona je odraz ekonomske snage, stabilnosti i optimizma. Naši podaci, obrađeni uz pomoć Pythona i njegovih biblioteka, pokazuju da je taj optimizam neravnomerno raspoređen. To je ključni izazov o kojem kao društvo moramo da razmišljamo. Jer na kraju, zdrava ekonomija je ona u kojoj svi delovi celine imaju priliku da napreduju, a ne samo jedan njen deo.
 
-Kompletan kod može se naći [ovde][github-repo].
+Kompletan kod može se naći [ovde][github-repo] 🔗.
 
-[github-repo]: https://github.com/ "Pogledaj kod na GitHub-u"
+[github-repo]: https://github.com/GolubovicNikola/blog-jupyter-notebooks/blob/main/da-li-srpska-domacinstva-stede.ipynb "Pogledaj kod na GitHub-u"

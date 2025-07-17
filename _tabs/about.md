@@ -3,21 +3,22 @@
 icon: fas fa-info-circle
 order: 4
 ---
+Ovaj sajt je nastao iz uverenja da je bolje pokušati i grešiti nego nikad ne pokušati.
+Imam dve jasne namere: da podelim ono što smatram korisnim i da kroz pisanje bolje razumem vlastite misli. Ako vam sadržaj nešto znači, odlično. Ako ne, bar sam ja nešto naučio.
 
-Ovo je IT blog. IT blog u dobu ChatGPT-a, Gemini-a i drugih AI modela je poput pečenja nakon bakinih sarmi. Višak je. Potreba za sadržajem je već zadovoljena. Ali, zar da prepustimo baš sve automatizovanom tekstu? 
+### Čemu možete da se nadate?
 
-Šta pokušavam i zašto?
-Ovaj sajt predstavlja sopstveni projekat koji će objediniti dve moje želje: 1) da podelim informacije svima koji traže istu i 2) da iskoristim svoje neiskorišćene projekte.
-
-Sadržaj će se bazirati na mom iskustvu u pisanju kojekakvih aplikacija. Ovo će biti plovidba bez jasnog cilja, gde je svaki članak pobeda. Koristim reč pobeda jer ona ovde predstavlja sukob dveju strana, borbu sebe s samim sobom. Naime, pisanje ovog sajta mi i predstavlja veliki izazov - da napišem čitljive članke.
-
-Na ovom sajtu je sav sadržaj pisan na mom maternjem jeziku, dok će opcija prevoda biti omogućena. Bitno je naglasiti i da je svaki tekst napisan isključivo mojim rukama, bez upotrebe AI modela.
-
-Ko sam ja?
-Zovem se Nikola, rođen devedesetih u Srbiji. Po obrazovanju master informatičar, a po prefesiji konsultant za Enterprise sisteme.  Možete me dodat na LinkedIn ili pošaljite mejl. Moje trenutno interesovanje je energetske zajednice su implementacija LLM modela sa strukturanim podacima.
+Neću ni sebe ni vas lagati o redovnim objavama ili jasno definisanim temama. Pišem o onome što me trenutno zanima, a to se kreće između tehnologije, problema koje rešavam i ideja koje testiram. Praksa ispred teorije.
 
 
+### Verovatno grešim, i to je u redu.
+
+Svaki post predstavlja moje trenutno razmišljanje nekog pitanja. Sutra ću možda misliti drugačije. Cilj nije da budem u pravu o svemu, već da podelim proces razmišljanja koji možda nekome bude koristan.
+
+### Ko sam ja?
+
+Nikola. Master informatičar koji radi sa SAP sistemima. Trenutno me fasciniraju energetske zajednice i implementacija LLM modela sa strukturiranim podacima. Verovatno će me sutra zanimati nešto potpuno drugo.
+
+Pitanja i komentari su dobrodoši. Posebno oni koji ukazuju na greške.
 
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
