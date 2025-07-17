@@ -1,21 +1,17 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Create the comments container
   const commentsContainer = document.createElement('div');
   commentsContainer.id = 'giscus-comments';
   commentsContainer.className = 'mt-5';
   commentsContainer.style.cssText = 'width: 100%; max-width: 100%; overflow: hidden; margin: 2rem 0; padding: 0 1rem;';
   
-  // Find the footer and insert comments before it
   const footer = document.querySelector('footer');
   if (footer) {
     footer.parentNode.insertBefore(commentsContainer, footer);
   } else {
-    // Fallback: append to body if no footer found
     document.body.appendChild(commentsContainer);
   }
   
-  // Giscus configuration
   let giscusAttributes = {
     "src": "https://giscus.app/client.js",
     "data-repo": "{{ site.comments.giscus.repo }}",
@@ -56,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
   };
 
-  // Append the script to the comments container
   commentsContainer.appendChild(giscusScript);
 });
 </script>
