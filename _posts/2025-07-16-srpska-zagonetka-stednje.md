@@ -26,7 +26,7 @@ Ovo je putovanje kroz "Srpsku zagonetku štednje", viđenu očima jednog informa
 
 Osnovna jednačina je jednostavna: **Prihodi - Rashodi = Štednja**. Kada ovu razliku podelimo sa prihodima, dobijamo **stopu štednje** – ključni pokazatelj finansijskog zdravlja. Pogledajmo kako se ta stopa kretala tokom godina u urbanim naseljima Srbije. Iako sam koristio urbana, krajnji rezultat je isti i za ruralna naselja.
 
-{% include_relative /_charts/savings_by_regions.html %} 
+{% include_relative /_charts/savings_by_region.html %} 
 Kompletan kod može se naći [ovde][github-repo] 🔗.
 ```python
 # Ovaj deo koda generiše grafikon stope štednje
