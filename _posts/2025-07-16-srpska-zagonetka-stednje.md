@@ -16,11 +16,13 @@ image:
 
 ## Zagonetka štednje srpskih domaćinstava
 
-Nisam ekonomista. Po profesiji sam informatičar i moja strast je da koristim tehnologiju za rešavanje kompleksnih problema. Umesto da se oslanjam na ekonomske teorije i modele, moj pristup je direktniji: pustiti podatke da govore sami za sebe. U svetu preplavljenom mišljenjima, verujem da nekoliko linija **Python** koda može doneti više jasnoće nego sati rasprava.
+Na prvi pogled, podaci o finansijama domaćinstava u Srbiji pričaju očekivanu priču: prosečna stopa štednje je skromna i izuzetno osetljiva na ekonomske potrese, što se jasno vidi iz oštrog pada tokom krizne 2012. godine.
 
-Vođen tom idejom, zaronio sam u zvanične podatke Republičkog zavoda za statistiku o [prihodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010101IND01/3/csv) i [rashodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010201IND01/3/csv). Cilj nije bio da potvrdim ili opovrgnem ekonomske pretpostavke, već da vidim kakvu priču sirovi brojevi pričaju o jednom od najvažnijih pitanja: da li naša domaćinstva uspevaju da žive od svojih prihoda i, što je još važnije, da li im na kraju meseca nešto preostane?
+To je jednostavan, prvi nivo analize. Ali, kao informatičar, naučio sam da nacionalni prosek često maskira fundimentalne razlike u zemlji i da se najvažniji uvidi kriju ispod površine.
 
-Ovo je putovanje kroz "Srpsku zagonetku štednje", viđenu očima jednog informatičara.
+Ono što nacionalni prosek sakriva jeste daleko dramatičnija istina: da u Srbiji postoje dve odvojene ekonomske realnosti. Pravo pitanje nije *da li* Srbija štedi, već *koji* deo Srbije jedini to uspeva, dok ostatak zemlje živi u minusu. Vođen ovim pitanjem zaronio sam u zvanične podatke Republičkog zavoda za statistiku o [prihodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010101IND01/3/csv) i [rashodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010201IND01/3/csv).
+
+U nastavku teksta, uz pomoć nekoliko linija **Python** koda, otkrivamo odgovor na tu, mnogo zanimljiviju, zagonetku.  
 
 ### Prvi nivo analize: Nacionalna slika
 
@@ -29,7 +31,6 @@ Osnovna jednačina je jednostavna: **Prihodi - Rashodi = Štednja**. Kada ovu ra
 {% include_relative /_charts/savings_by_region.html %} 
 Kompletan kod može se naći [ovde][github-repo] 🔗.
 ```python
-# Ovaj deo koda generiše grafikon stope štednje
 import plotly.express as px
 fig = px.line(merged_df, x='god', y='stopa_stednje', color='nTer_income',
               title='Štednja tokom godina po regionima',
@@ -66,10 +67,11 @@ Da bismo razumeli *zašto* postoji ova razlika, moramo pogledati na šta se nova
 {% include_relative /_charts/category_spendings.html %}
 
 ```python
-# Ovaj deo koda poredi specifične kategorije potrošnje
 pivot = df_out_tmp.pivot(index='nCOICOP', columns='nTer', values='vrednost')
 pivot['diff'] = (pivot.max(axis=1) - pivot.min(axis=1)).abs()
-filtered_categories = pivot[pivot['diff'] > 1.2].index
+
+# Prikazati kategorije u kojima je razlika osetna
+filtered_categories = pivot[pivot['diff'] > 1.2].index 
 filtered_df = df_out_tmp[df_out_tmp['nCOICOP'].isin(filtered_categories)]
 
 fig = px.bar(
@@ -85,7 +87,7 @@ fig.show()
 ```
 Rezultati su fascinantni. U Beogradu se primetno veći deo budžeta odvaja za kategorije kao što su **"Rekreacija i kultura"** i **"Restorani i hoteli"**. U regionu Šumadije i Zapadne Srbije, veći udeo odlazi na **"Alkoholna pića i duvan"**.
 
-Ovo nije moralna osuda, već **ekonomski signal**. Potrošnja na kulturu i restorane je često znak višeg raspoloživog dohotka i razvijenije uslužne ekonomije. Sa druge strane, kada su prihodi niži, potrošnja se fokusira na **cenovno pristupačnije oblike zadovoljstva**. To je odraz ekonomskih mogućnosti, a ne karaktera.
+Ovo nije moralna osuda, već **ekonomski signal**. Potrošnja na kulturu i restorane je često znak višeg raspoloživog dohotka i razvijenije uslužne ekonomije. Sa druge strane, kada su prihodi niži, potrošnja se fokusira na **pristupačnije oblike zadovoljstva**. To je odraz ekonomskih mogućnosti, a ne karaktera.
 
 ### Zaključak
 
