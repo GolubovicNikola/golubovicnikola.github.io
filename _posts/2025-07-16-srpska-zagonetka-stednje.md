@@ -5,7 +5,7 @@ description: Štednja je gotovo umetnost i nacionalni sport u Srbiji, nastao iz 
 date: 2025-07-17
 author: nikola
 categories: [Data Science, Economics]
-tags: [data analysis, savings rate, Serbian economy]
+tags: [data analysis, python, pandas, savings rate, Serbian economy]
 pin: false
 math: true
 comments: true
