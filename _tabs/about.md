@@ -17,8 +17,8 @@ Svaki post predstavlja moje trenutno razmišljanje nekog pitanja. Sutra ću mož
 
 ### Ko sam ja?
 
-Nikola. Master informatičar koji radi sa SAP sistemima. Trenutno me fasciniraju energetske zajednice i implementacija LLM modela sa strukturiranim podacima. Verovatno će me sutra zanimati nešto potpuno drugo.
+Nikola. Master informatičar koji radi sa SAP sistemima. Trenutno me fasciniraju energetske zajednice i implementacija LLM modela sa strukturiranim podacima. 
 
 Ovaj sajt je razvijen integracijom Github-a sa [Jekyll](https://jekyllrb.com/) sajt generatorom i [Giscus](https://giscus.app/) sistemom za komentare.
 
-Pitanja i komentari su dobrodoši. Posebno oni koji ukazuju na greške.
+Pitanja i komentari su dobrodoši.
