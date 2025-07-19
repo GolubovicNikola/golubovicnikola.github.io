@@ -11,7 +11,7 @@ Imam dve jasne namere: da podelim ono što smatram korisnim i da kroz pisanje bo
 Neću ni sebe ni vas lagati o redovnim objavama ili jasno definisanim temama. Pišem o onome što me trenutno zanima, a to se kreće između tehnologije, problema koje rešavam i ideja koje testiram. Praksa ispred teorije.
 
 
-### Verovatno grešim, i to je u redu.
+### Možda grešim, i to je u redu.
 
 Svaki post predstavlja moje trenutno razmišljanje nekog pitanja. Sutra ću možda misliti drugačije. Cilj nije da budem u pravu o svemu, već da podelim proces razmišljanja koji možda nekome bude koristan.
 
