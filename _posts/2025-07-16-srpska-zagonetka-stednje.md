@@ -16,11 +16,11 @@ image:
 
 ## Zagonetka štednje srpskih domaćinstava
 
+U Srbiji postoje dve odvojene ekonomske realnosti. Pravo pitanje nije *da li* Srbija štedi, već *koji* deo Srbije jedini to uspeva, dok ostatak zemlje živi u minusu.
+
 Nisam ekonomista. Po profesiji sam informatičar i moja strast je da koristim tehnologiju za rešavanje kompleksnih problema. Umesto da se oslanjam na ekonomske teorije i modele, moj pristup je direktniji: pustiti podatke da govore sami za sebe. 
 
-Vođen ovom idejom zaronio sam u zvanične podatke Republičkog zavoda za statistiku o [prihodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010101IND01/3/csv) i [rashodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010201IND01/3/csv), i otkrio da prosečna stopa štednje u Srbiji je skromna i da je izuzetno osetljiva na ekonomske potrese, što se jasno vidi iz oštrog pada tokom krizne 2012. godine.
-
-Međutim ono što se može videti jeste daleko dramatičnija istina: da u Srbiji postoje dve odvojene ekonomske realnosti. Pravo pitanje nije *da li* Srbija štedi, već *koji* deo Srbije jedini to uspeva, dok ostatak zemlje živi u minusu. 
+Vođen ovom idejom zaronio sam u zvanične podatke Republičkog zavoda za statistiku o [prihodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010101IND01/3/csv) i [rashodima](https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/010201IND01/3/csv), i otkrio da je prosečna stopa štednje u Srbiji skromna i da je izuzetno osetljiva na ekonomske potrese, što se jasno vidi iz oštrog pada tokom krizne 2012. godine. 
 
 U nastavku teksta, uz pomoć nekoliko linija **Python** koda, otkrivamo odgovor na tu, mnogo zanimljiviju, zagonetku.  
 
