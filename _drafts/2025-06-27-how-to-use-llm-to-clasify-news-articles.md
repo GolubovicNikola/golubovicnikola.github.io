@@ -14,11 +14,11 @@ mermaid: true
 
 *Beyond chatbots: A practical guide to building an intelligent content curation pipeline with Python, LangChain, and a single, powerful prompt.*
 
-We are all drowning in information. The internet is a firehose of content, and for anyone trying to stay informed on a specific topic, cutting through the noise is a full-time job. Whether you're a homeowner researching solar panels or a developer tracking AI trends, the challenge is the same: How do you find the handful of articles that *actually matter*?
+We're all drowning in information. The internet is a firehose of content, and for anyone trying to stay informed on a specific topic, cutting through the noise is a full-time job. Whether you're a homeowner researching solar panels or a developer tracking AI trends, the challenge is the same: How do you find the handful of articles that *actually matter*?
 
 For years, the answer involved complex keyword filters, manual curation, or machine learning models that required massive datasets and specialized training. But today, with the power of Large Language Models (LLMs), we can build a remarkably sophisticated classification and curation system in just a few lines of Python.
 
-In this post, we’ll break down the engine behind an AI-powered news service, showing you exactly how it uses an LLM to read a stream of articles and intelligently select the most relevant ones. This isn't theory; it's a look at production code.
+In this post, we'll break down the engine behind an AI-powered news service, showing you exactly how it uses an LLM to read a stream of articles and intelligently select the most relevant ones. This isn't theory; it's a look at production code.
 
 ### The Goal: From Information Overload to Curated Digest
 
