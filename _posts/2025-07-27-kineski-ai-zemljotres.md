@@ -44,7 +44,7 @@ Besplatan model od 480 milijardi parametara zvuči kao poklon. Ali šta ako je i
 
 Omogućavajući programerima širom sveta da grade na njihovim sistemima, Kina potencijalno uspostavlja kineske modele kao globalne standarde.
 
-## Kako sam pokrenuo Qwen3 (i zašto ćeš verovatno hteti isto)
+## Kako sam pokrenuo jedan od najvećih LLM modela: Qwen3
 
 Posle nedelju dana testiranja, moram da priznam da je ovo *game changer*. Evo kako sam to uradio, korak po korak.
 
