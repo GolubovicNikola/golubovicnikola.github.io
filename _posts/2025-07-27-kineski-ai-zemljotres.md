@@ -1,223 +1,102 @@
 ---
 layout: post
-title: AI Revolucija 2025: Uticaj na programere i praktični vodič za Qwen Coder
-description: Kineski AI modeli revolucionišu programiranje: Od cenovnih šokova do praktičnih rešenja
-date: 2025-07-27
+title: "Zašto sam prešao na kineski AI (i zašto ćeš i ti)"
+description: Kineski AI modeli revolucionišu programiranje, od cenovnih šokova do praktičnih rešenja
+date: 2025-08-04
 author: nikola
-categories: [Data Science, Economics]
-tags: [data analysis, python, pandas, savings rate, Serbian economy]
+categories: [AI, Programming]
+tags: [qwen3, chat-gpt, glm, kimi-2, deepseek, open-source, vs-code, comet-api, china-ai]
 pin: false
 math: true
 comments: true
 image:
-  path: https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-  alt: Photo by <a href='https://unsplash.com/@micheile?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>micheile henderson</a> on <a href='https://unsplash.com/photos/green-plant-in-clear-glass-vase-ZVprbBmT8QA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>
+  path: https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  alt: Photo by <a href='https://unsplash.com/@omilaev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Igor Omilaev</a> on <a href='https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>
 ---
-# Tihi zemljotres u AI industriji
 
-*(Tekst je ažuriran sa stanjem u julu 2025. godine)*
-# Kineski AI modeli revolucionišu programiranje: Od cenovnih šokova do praktičnih rešenja
+*(Tekst je ažuriran sa stanjem 1. avgusta 2025. godine)*
 
 ## Tihi zemljotres u AI industriji
 
-U svetu gde se tehnološki napredak meri kroz višegodišnje cikluse, ono što se desilo u julu 2025. godine predstavlja pravi zaokret. Kineski AI startapovi nisu samo objavili nove modele, oni su fundamentalno redefinisali ekonomiju veštačke inteligencije za programere širom sveta.
+Kada API poziv košta manje od kafe, a rezultat je analiza celog repozitorijuma, znate da se nešto promenilo.
+
+Ono što se desilo krajem jula 2025. godine predstavlja pravi zaokret. Kineske AI labaratorije nisu samo objavili nove modele koji u potpunosti konkurišu Zapadnim, oni su fundamentalno redefinisali ekonomiju veštačke inteligencije za programere širom sveta.
+
+Sa prijateljima često razgovaram o kineskom uspehu u poljima auto industrije, arhitekture i nauke, ali ovog puta sam ostao zapanjen njihovim dostignućima u polju veštačke inteligencije. Naime, u samo nedelju dana, objavljena su tri, kineska modela koji su pomerili lestvicu *state-of-art* open source modela. Kimi K2, Qwen3 i GLM 4.5.
 
 ### Cenovni šok koji menja sve
 
-Brojke govore jasnu priču o revoluciji koja se odvija pred našim očima. DeepSeek V3 košta samo $0.27 po milioneu input tokena, što je **30 puta jeftinije** od GPT-4o modela koji košta $2.50[1](https://research.aimultiple.com/llm-pricing/). Alibaba je lansirala Qwen3-235B[2](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct) model koji konkuriše GPT-4 performansama po četvrtini cene[2](https://www.scmp.com/tech/big-tech/article/3318747/how-chinas-open-source-ai-helping-deepseek-alibaba-take-silicon-valley). Z.ai[2](https://huggingface.co/zai-org/GLM-4.5) je postavila novi industrijski rekord sa GLM-4.5 po najnižoj ceni—samo $0.11 po milion tokena[3](https://www.cnbc.com/2025/07/28/chinas-latest-ai-model-claims-to-be-even-cheaper-to-use-than-deepseek.html).
+Brojke govore jasnu priču o promenama koje se odvijaju pred našim očima. 
+Kineski AI modeli su znatno jeftiniji od zapadnih. DeepSeek V3 košta **30 puta manje** od GPT-4o, Qwen3-480B nudi GPT-4 performanse za 0.24 dolara, a GLM-4.5 drži rekord sa cenom od samo 0.11 dolara po milionu tokena[^1][^2][^2a][^2b][^3].
 
-Ali ova cenovna revolucija nije slučajnost. To je rezultat sistemskog pristupa koji Kina sprovodi kroz potpunu demokratizaciju AI tehnologije. Za razliku od zatvorenih, vlasničkih modela koji dominiraju Zapadom, kineski pristup počiva na **potpunoj otvorenosti**—source kod, težine modela, čak i podaci za treniranje su javno dostupni.
+[^1]: [https://research.aimultiple.com/llm-pricing/](https://research.aimultiple.com/llm-pricing/)
+[^1a]: [https://platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing)
+[^2]: [https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
+[^2a]: [https://www.scmp.com/tech/big-tech/article/3318747/how-chinas-open-source-ai-helping-deepseek-alibaba-take-silicon-valley](https://www.scmp.com/tech/big-tech/article/3318747/how-chinas-open-source-ai-helping-deepseek-alibaba-take-silicon-valley)
+[^2b]: [https://huggingface.co/zai-org/GLM-4.5](https://huggingface.co/zai-org/GLM-4.5)
+[^3]: [https://www.cnbc.com/2025/07/28/chinas-latest-ai-model-claims-to-be-even-cheaper-to-use-than-deepseek.html](https://www.cnbc.com/2025/07/28/chinas-latest-ai-model-claims-to-be-even-cheaper-to-use-than-deepseek.html)
 
-Kada je OpenAI u julu 2024. blokirao pristup kineskim korisnicima, Kina je usvojila drugačiji pristup - stvaranje alternative koja je **dostupnija, jeftinija i otvorenija**. Omogućavajući programerima širom sveta da grade na njihovim sistemima, Kina potencijalno uspostavlja kineske modele kao globalne standarde.
+**ovde cu dodati neki chart za cene**
 
-Usred ove bitke između Kine i SAD-a, Evropa priprema treći put. ETH Zurich i EPFL najavljuju objavljivanje potpuno otvorenog, multilangualnog LLM-a tokom leta 2025. Ovaj model podržava preko **1.500 jezika** sa 40% ne-engleskih trening podataka[4](https://ethz.ch/en/news-and-events/eth-news/news/2025/07/a-language-model-built-for-the-public-good.html).
+Ova cenovna revolucija nije slučajnost. To što Kina sprovodi potpunu demokratizaciju AI tehnologije, to je rezultat sistemskog pristupa. Za razliku od zatvorenih, vlasničkih modela koji dominiraju Zapadom, kineski pristup počiva na **potpunoj otvorenosti**, source kod, težine modela, čak i podaci za treniranje su javno dostupni. Ovo znači da možete besplatno koristiti ove modele, ukoliko imate snažan računar. 
 
-## Praktični vodič: Kompletno podešavanje Qwen Coder-a
+Besplatan model od 480 milijardi parametara zvuči kao poklon. Ali šta ako je i alat i mamac?
 
-Ranije ove nedelje Alibaba je izbacio najnoviji MoE (Mixture of Expert) model Qwen3-Coder, veličine 480 milijardi parametara (od čega 35 milijardi aktivnih). Ne samo da su objavili besplatan Qwen3-coder, već su objavili i open source CLI alat koji je razvijen kao nadogradnja na već postojeći Google-ov open source Gemini CLI. Ono što je impresivno je da Qwen3-Coder prima 256.000+ ulaznih tokena, sa podrškom i do milion tokena. Reference radi, ovo je dovoljna količina informacije da model obradi celu vašu kod-bazu.
+Omogućavajući programerima širom sveta da grade na njihovim sistemima, Kina potencijalno uspostavlja kineske modele kao globalne standarde.
 
-![Tabela merenja uspešnosti LLM modela prilikom rešavanja različitih problema](./_images/qwen3-coder-benchmark.png)
+## Kako sam pokrenuo Qwen3 (i zašto ćeš verovatno hteti isto)
 
-Qwen3-Coder je dostupan svima za nadogradnju i rad, ali ukoliko mislite da ga možete pokrenuti na svom računaru, evo male pomoći: Ne možete. Naime, model sa 480 milijardi parametara, poput Qwen3-Coder, zahteva ogromnu pokretačku snagu GPU-a, čija cena ide do par desetina, do čak i do stotine hiljada evra. Mnogo relniji pristup, uz male dodatne troškove, je korišćenjem API poziva, koristeći se API ključem nekog od provajdera.
+Posle nedelju dana testiranja, moram da priznam da je ovo *game changer*. Evo kako sam to uradio, korak po korak.
 
-Za programere spremne da iskoriste prednosti najnovijih kineskih AI modela, evo detaljnog vodiča za postavku Qwen3-Coder sistema sa naprednim reasoning mogućnostima. 
+**Prvo, realnost check:**
+Zaboravi lokalno pokretanje. Pokušao sam sa LLaMA 3 (8B parametara) na svom računaru i jedva se izvukao. Qwen3 ima 480B parametara. Računica je brutalna.
 
-### Korak 1: Priprema razvojnog okruženja
+**Šta stvarno radiš:**
+Koristiš API, kao što koristiš GitHub ili AWS. Razlika je što je ovo kineski servis koji košta 30x manje od GPT-4.
 
+### Setup koji mi je radio:
+
+**1. Node.js**
 ```bash
-# Instaliraj Node.js 20+
-curl -qL https://www.npmjs.com/install.sh | sh
+# Ako nemaš Node 20+, skini ga
+node --version  # proveri verziju
 
-# Verifikuj instalaciju
-node --version
-npm --version
-
-# Instaliraj Qwen Code CLI globalno
+# Instaliraj Qwen CLI
 npm install -g @qwen-code/qwen-code
-
-# Verifikuj instalaciju
-qwen --version
 ```
 
-### Korak 2: Registracija i konfiguracija CometAPI servisa
-
-CometAPI predstavlja optimizovano rešenje za pristup kineskim AI modelima:
-
-1. Idi na https://www.cometapi.com/
-2. Registruj se za besplatni nalog
-3. Dobićeš **0.10 $** za testiranje
-4. Idi na **API keys** -> **Add API key**
-![Slika ekrana s platforme Comet API](./_images/comet-api-qwen.png)
-5. Unesi ime, i kopiraj vrednost ključa
-
-Qwen Code komunicira s LLM modelima preko OpenAI SDK, stoga je neophodno definisati sledeće promeljive (ili jednostavnije definisati u .env fajlu) 
+**2. API deo (malo dosadan, ali mora)**
+- Otvori [CometAPI.com](https://cometapi.com) 
+- Registruj se (daju ti $0.10 za testiranje)
+- Uzmi API key iz dashboard-a
+- Eksportuj varijable:
 
 ```bash
-# Postavi environment varijable (dodaj u ~/.bashrc ili ~/.zshrc ukoliko želiš da se vrednost sačuva u novim terminalima)
-export OPENAI_API_KEY="your_cometapi_key_here"
+export OPENAI_API_KEY="tvoj_key_ovde"
 export OPENAI_BASE_URL="https://api.cometapi.com/v1"
 export OPENAI_MODEL="qwen3-coder-plus"
-
-# Reloaduj shell ili izvršni source
-source ~/.bashrc
 ```
 
-### Korak 3: 
-
-**Opcija A: Continue ekstenzija**
-1. Instaliraj "Continue" ekstenziju u VS Code[35][36]
-2. Otvori Command Palette (Ctrl+Shift+P)
-3. Kucaj "Continue: Open Config"
-4. Dodaj konfiguraciju:
-
-```json
-{
-  "models": [
-    {
-      "title": "Qwen3 Coder",
-      "provider": "openai",
-      "model": "qwen3-coder-plus",
-      "apiKey": "your_cometapi_key",
-      "apiBase": "https://api.cometapi.com/v1"
-    }
-  ]
-}
-```
-
-**Opcija B: Cline ekstenzija**
-Koristi istu konfiguraciju ali sa Cline interface-om za agenčko ponašanje[36].
-
-### Korak 4: Pokretanje i osnovno testiranje
-
+**3. Test koji me je uverio:**
 ```bash
-# Pokreni Qwen Code CLI
 qwen
-
-# Otvoriće se polje za unos
-> Objasni JWT mehanizam autentikacije
-
-# Test sa fajlom
-> Analiziraj @./src/main.js
-
-# Test sa celom codebase
-> Generiši README fajl za ovaj projekat
-
-> Predloži potencijalna poboljšanja ili refaktorisanje ovog repozitorijuma?
+> Analiziraj @./src/  # pokazao mi je sve što sam zaboravio u kodu
 ```
+**Proveri i Google-ov Gemini CLI, nad kojim je Qwen Code CLI nadograđen. Google nudi besplatne tokene.**[^4]
 
-### Korak 6: Integracija sa postojećim workflow-om
+[^4]:[https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
 
-**CI/CD integracija:**
-```yaml
-# .github/workflows/ai-review.yml
-name: AI Code Review
-on: [pull_request]
-jobs:
-  ai-review:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
-      - name: Install Qwen CLI
-        run: npm install -g @qwen-code/qwen-code
-      - name: AI Review
-        run: qwen review --pr-diff
-        env:
-          OPENAI_API_KEY: ${{ secrets.COMETAPI_KEY }}
-```
+### Bonus: Cline ekstenzija
 
-### Korak 7: Optimizacija performansi i troškova
+Ako si kao ja i mrziš terminal za duže konverzacije, probaj [Cline](https://cline.bot/) u VS Code-u. Isti API, bolji interfejs. Instaliraš ekstenziju, uneseš iste podatke, i možeš da komuniciraš direktno u editoru.
 
-```bash
-# Konfiguriši caching za česte upite
-qwen config set cache-enabled true
-qwen config set cache-ttl 3600
+**Moja preporuka:** Kreni sa CLI-jem da vidiš kako radi, zatim pređi na Cline za ozbiljne projekte.
 
-# Postavke za cost optimization
-qwen config set max-tokens 2048
-qwen config set temperature 0.3
+## Zakjučak: Srpski programeri kao oni sa Silicon Valley
 
-# Bulk processing za veće projekte
-qwen batch-process --input-dir ./src --output-format json
-```
+Ono što me zabrinjavava nije brzina ovih promena, već naša spremnost da ih razumemo. Dok se fokusiramo na tehnička čuda kineskih modela, pitanje koje postaje relevantno: Šta to ne vidimo?
 
-### Primeri praktične upotrebe sa reasoning
+Možda je prava priča ovde geopolitička. Kina demokratizuje AI ne iz humanosti, već da bi postavila svoju infrastrukturu kao globalni standard. Možda je priča u tome što srpski programeri, po prvi put u istoriji, imaju pristup *cutting-edge* tehnologiji istovremeno sa Silicon Valley.
 
-**Kompleksna analiza koda:**
-```bash
-# Duboka analiza sa objašnjenjem
-qwen analyze --deep-reasoning ./complex-algorithm.py
-```
+Koja je vaša teorija?
 
-Qwen3-Coder će:
-1. **Analizirati strukturu** koda
-2. **Identifikovati** potencijalne probleme
-3. **Objasniti reasoning** za svaki predlog
-4. **Predložiti optimizacije** sa objašnjenjem zašto
-
-**Refactoring sa step-by-step objašnjenjem:**
-```bash
-qwen refactor --explain-steps ./legacy-code.js
-```
-
-Model će pokazati:
-- **Zašto** određeni kod treba refaktorisati
-- **Kako** će promena uticati na performanse
-- **Alternativna rešenja** sa pros/cons analizom
-
-### Troubleshooting česti problemi
-
-**Problem: Rate limiting**
-```bash
-# Konfiguriši retry strategiju
-qwen config set retry-attempts 3
-qwen config set retry-delay 1000
-```
-
-**Problem: Veliki fajlovi**
-```bash
-# Chunking za velike fajlove
-qwen config set chunk-size 8192
-qwen config set overlap-size 256
-```
-
-**Problem: Context overflow**
-```bash
-# Automatsko skraćivanje konteksta
-qwen config set auto-truncate true
-qwen config set context-priority code-focus
-```
-
-## Zakjučak: Nova era programiranja
-
-Kombinacija drastično smanjenih troškova, proširenih kontekst prozora (od skromnih 8.000 do preko 128.000+ tokena[16][17]), i naprednih reasoning mogućnosti čini 2025. godinu prekretnicom za programere. Sa alatima kao što je Qwen3-Coder, kompleksne analize codebase-a koje su ranije bile privilagija velikih korporacija sada su dostupne svima.
-
-Ova tehnološka demokratizacija nije samo o jeftinijim API pozivima—to je fundamentalna promena u tome kako pristupamo rešavanju problema u programiranju. AI agenti sa reasoning mogućnostima mogu da ne samo odgovore na naša pitanja, već da **objasne svoje razmišljanje**, **predlože alternative**, i **adaptiraju se** na specifične potrebe svakog projekta.
-
----
-
-**Reference:**
-[1-40] - Kompletna lista referenci dostupna u originalnim izvorima linkovanim kroz tekst
