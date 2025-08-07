@@ -27,7 +27,7 @@ Priznanje da se igra promenila dogodilo se juče, kada je OpenAI nakon 6 godina 
 [^0]: [https://openai.com/index/introducing-gpt-oss/](https://openai.com/index/introducing-gpt-oss/)
 [^0a]: [https://ethz.ch/en/news-and-events/eth-news/news/2025/07/a-language-model-built-for-the-public-good.html](https://ethz.ch/en/news-and-events/eth-news/news/2025/07/a-language-model-built-for-the-public-good.html)
 
-Sa prijateljima često razgovaram o kineskom uspehu u poljima auto industrije, arhitekture i nauke, ali ovog puta sam ostao zapanjen njihovim dostignućima u polju veštačke inteligencije. Naime, u samo nedelju dana, objavljena su tri, kineska modela koji su pomerili lestvicu *state-of-art* open source modela. Kimi K2, Qwen3 i GLM 4.5.
+Sa prijateljima često razgovaram o kineskom uspehu u poljima auto industrije, arhitekture i nauke, ali ovog puta sam ostao zapanjen njihovim dostignućima u polju veštačke inteligencije. Naime, u samo nedelju dana, objavljena su tri, kineska modela koji su pomerili lestvicu *state-of-art* open source modela (Kimi K2, Qwen3 i GLM 4.5).
 
 ### Cenovni šok koji menja sve
 
@@ -57,7 +57,7 @@ Posle nedelju dana testiranja, moram da priznam da je ovo *game changer*, što b
 **Prvo, realnost check:**
 Zaboravite lokalno pokretanje. Pokušao sam sa LLaMA 3 (8B parametara) na svom računaru i jedva se izvukao. Qwen3 ima 480B parametara.
 
-**Šta stvarno radiš:**
+**Šta stvarno radite:**
 Koristite API, kao što koristite GitHub ili AWS.
 
 ### Setup koji mi je radio:
