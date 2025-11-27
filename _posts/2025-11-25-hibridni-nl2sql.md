@@ -19,8 +19,8 @@ Kada spomenem ljudima da radim na virtualnom asistentu, njihov pogled obično ka
 
 <div class="mermaid">
 graph TD
-  A["Korisničko pitanje: 'top 10 kupaca ovog kvartala'"] --> B[Generisanje embedding vektora]
-  B --> C["Pronalaženje najbližeg obrasca"]
+  A[Korisničko pitanje: 'top 10 kupaca ovog kvartala'] --> B[Generisanje embedding vektora]
+  B --> C['Pronalaženje najbližeg obrasca']
   
   C --> D{Obrazac pronađen?}
   D -->|Ne| E[Vraćanje greške]
@@ -46,6 +46,7 @@ graph TD
   style O fill:#f5b342
   style Q fill:#e07e7e
   style E fill:#e07e7e
+
 </div>
 
 <p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.</em></p>
