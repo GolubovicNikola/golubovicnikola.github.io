@@ -211,7 +211,7 @@ Kada korisnik postavi pitanje, dešava se sledeće:
 
 1. Pretvori pitanje u vektor `pkl` fajl (računanje vektora - [jedan API poziv, ~$0.00013 za 1k tokena](https://openai.com/index/new-embedding-models-and-api-updates/))
 2. Izračunava sličnost između vektora postavljenog pitanja i svih ostalih (vraća [-1,1] koristeći [kosinus funkciju ugla](https://en.wikipedia.org/wiki/Cosine_similarity))
-3. Vraća vektor koji je najbliži korisnikovom pitanju po sličnosti. (Zavisi od postavljene granice sličnosti - koristio sam 0.65)
+3. Vraća vektor koji je najbliži korisničkom pitanju po sličnosti. (Zavisi od postavljene granice sličnosti - koristio sam 0.65)
 
 **Zašto embeddings?**
 
@@ -286,11 +286,11 @@ if os.path.exists("embeddings-file.pkl"):
         self.template_embeddings = pickle.load(f)
 ```
 
-Ovako generišete vektor samo za korisnikovo pitanje tokom rada programa. Sve ostalo je već izračunato.
+Ovako generišete vektor samo za korisničko pitanje tokom rada programa. Sve ostalo je već izračunato.
 
 ## Preporuka za budućnost: Templejti koji uče?
 
-Trenutno, templejti su ručno napisani, ali šta ukoliko bi mogli da uče iz korisnikovih pitanja? 
+Trenutno, templejti su ručno napisani, ali šta ukoliko bi mogli da uče iz korisničkih pitanja? 
 
 Posmatrajte šta korisnici pišu. Da li ste videli isto pitanje 10 puta? Generišite obrazac. Neka LLM generiše SQL kod, vi ga proverite, dodajte parametre i JSON obrazac je spreman.
 
