@@ -16,10 +16,11 @@ image:
 ---
 
 Kada spomenem ljudima da radim na virtualnom asistentu, njihov pogled obično kaže: "Evo ga ovaj što će da napravi program koji uzima ljudima posao". A istina je mnogo manje dramatičnija: pravim pametan sistem, a ne "svemoguć" model. Ovaj tekst je upravo o tom sistemu, hibridu između praistorijskih regex šablona i "spakuj sve u prompt i pozovi API".
+
 <div class="mermaid">
 graph TD
-  A[Korisničko pitanje:<br/>'top 10 kupaca ovog kvartala'] --> B[Generisanje embedding vektora]
-  B --> C[Pronalaženje najbližeg obrasca<br/>cosine similarity > 0.65]
+  A["Korisničko pitanje: 'top 10 kupaca ovog kvartala'"] --> B[Generisanje embedding vektora]
+  B --> C["Pronalaženje najbližeg obrasca"]
   
   C --> D{Obrazac pronađen?}
   D -->|Ne| E[Vraćanje greške]
@@ -27,12 +28,12 @@ graph TD
   
   F --> M{Tip akcije?}
   M -->|SQL| N[Validacija]
-  M -->|API| O[REST API - <i>*naredni članak*</i>]
+  M -->|API| O[REST API - naredni članak]
   
-  N --> P{Sigurna<br/>naredba?}
+  N --> P{Sigurna naredba?}
   P -->|Ne| Q[Blokiranje izvršenja]
   P -->|Da| R[Izvršenje SQL-a]
-  R -->|Podaci| H[LLM sređuje odgovor]
+  R -->|Podaci| H[LLM obrađuje odgovor]
   
   H --> S[Rezultat korisniku]
   O --> S
