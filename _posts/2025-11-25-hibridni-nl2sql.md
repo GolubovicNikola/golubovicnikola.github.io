@@ -17,38 +17,12 @@ image:
 
 Kada spomenem ljudima da radim na virtualnom asistentu, njihov pogled obično kaže: "Evo ga ovaj što će da napravi program koji uzima ljudima posao". A istina je mnogo manje dramatičnija: pravim pametan sistem, a ne "svemoguć" model. Ovaj tekst je upravo o tom sistemu, hibridu između praistorijskih regex šablona i "spakuj sve u prompt i pozovi API".
 
-```mermaid
-graph TD
-  A[Korisničko pitanje: 'top 10 kupaca ovog kvartala'] --> B[Generisanje embedding vektora]
-  B --> C['Pronalaženje najbližeg obrasca']
-  
-  C --> D{Obrazac pronađen?}
-  D -->|Ne| E[Vraćanje greške]
-  D -->|Da| F[Ekstrakcija parametara - 3 nivoa]
-  
-  F --> M{Tip akcije?}
-  M -->|SQL| N[Validacija]
-  M -->|API| O[REST API - naredni članak]
-  
-  N --> P{Sigurna naredba?}
-  P -->|Ne| Q[Blokiranje izvršenja]
-  P -->|Da| R[Izvršenje SQL-a]
-  R -->|Podaci| H[LLM obrađuje odgovor]
-  
-  H --> S[Rezultat korisniku]
-  O --> S
-  Q --> S
-  
-  style B fill:#e1f5ff
-  style C fill:#e1f5ff
-  style N fill:#e1f5ff
-  style S fill:#e8f5e9
-  style O fill:#f5b342
-  style Q fill:#e07e7e
-  style E fill:#e07e7e
-```
-
-<p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.</em></p>
+<p align="center">
+  <a href="/assets/images/nl2sql-flow.png" target="_blank">
+    <img src="/assets/images/nl2sql-flow.png" alt="NL2SQL Flow Diagram">
+  </a>
+</p>
+<p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.<br> <strong>Klikni na sliku za uvećanje</strong></em></p>
 
 Ideja je da konceptualno objasnim strukturu projekta, koji na osnovu prirodnog i ljudskog pitanja izvršava naredbe i odgovara. I to služeći se internom bazom podataka. Sve to sam naučio za šest meseci bakćajući se sa NLP-om, embeddings-ima, LLM-ovima, halucinacijama... i jednim modelom koji se ponekad ponaša kao da je na rekreativnoj LSD dozi.
 
@@ -98,49 +72,32 @@ Stičem utisak da za implementaciju virtualnog asistenta industrija uporno bira 
 from openai import OpenAI
 
 client = OpenAI()
-
 DB_SCHEMA = """
 Tables:
 users(id, name, email, created_at)
 orders(id, user_id, total_amount, created_at)
 order_items(id, order_id, product_name, quantity, price)
-
 Relations:
 orders.user_id -> users.id
 order_items.order_id -> orders.id
 """
 
 def generate_sql(user_question):
-    prompt = f"""
-You are an expert SQL assistant.
+  prompt = f"""You are an expert SQL assistant.
+Schema: {DB_SCHEMA}
+Rules: SQLServer only, no explanations, no placeholders.
+User: "{user_question}" """
+  resp = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[
+      {"role": "system", "content": "Translate natural language to SQL."},
+      {"role": "user", "content": prompt}
+    ],
+    temperature=0
+  )
+  return resp.choices[0].message.content
 
-Here is the database schema:
-{DB_SCHEMA}
-
-Rules:
-- Generate only valid PostgreSQL SQL
-- Do NOT explain anything
-- Do NOT use placeholders
-- Return only SQL
-
-User question:
-"{user_question}"
-"""
-
-    response = client.chat.completions.create(
-        model="gpt-4.1-mini",
-        messages=[
-            {"role": "system", "content": "You translate natural language into SQL queries."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0
-    )
-
-    return response.choices[0].message.content
-
-
-question = "Show total revenue per user for last 30 days"
-print(generate_sql(question))
+print(generate_sql("Show total revenue per user for last 30 days"))
 ```
 
 Sjajno, ali... Ovo košta. I sporo je. I halucinira.
