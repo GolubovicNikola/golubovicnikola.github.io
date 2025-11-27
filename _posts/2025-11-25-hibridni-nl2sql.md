@@ -17,7 +17,7 @@ image:
 
 Kada spomenem ljudima da radim na virtualnom asistentu, njihov pogled obično kaže: "Evo ga ovaj što će da napravi program koji uzima ljudima posao". A istina je mnogo manje dramatičnija: pravim pametan sistem, a ne "svemoguć" model. Ovaj tekst je upravo o tom sistemu, hibridu između praistorijskih regex šablona i "spakuj sve u prompt i pozovi API".
 
-<div class="mermaid">
+```mermaid
 graph TD
   A[Korisničko pitanje: 'top 10 kupaca ovog kvartala'] --> B[Generisanje embedding vektora]
   B --> C['Pronalaženje najbližeg obrasca']
@@ -46,8 +46,7 @@ graph TD
   style O fill:#f5b342
   style Q fill:#e07e7e
   style E fill:#e07e7e
-
-</div>
+```
 
 <p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.</em></p>
 
