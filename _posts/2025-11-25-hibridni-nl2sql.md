@@ -269,3 +269,12 @@ Ne pravim sisteme da budu magični, pravim ih da rade.
 Ako želite da napravite sličan sistem, javite se mejlom: [nikola@goluxai.com](mailto:nikola@goluxai.com). Poslaću vam kod, objasniti principe i najvažnije - pomoći da zaobiđete moje greške.
 
 Vidimo se u narednom članku, gde ulazimo u **Akcije** i REST API da bih objasnio kako virtualni asistent zna šta da uradi, a ne samo da odgovori.
+
+### Reference
+
+1. [SEED Github](https://github.com/felix01189/SEED/tree/main)
+2. [LinkAlign: Scalable Schema Linking for Real-World Large-Scale Multi-Database Text-to-SQL](https://arxiv.org/html/2503.18596v2)
+3. [SEED: Enhancing Text-to-SQL Performance and Practical Usability Through Automatic Evidence Generation](https://arxiv.org/html/2506.07423v1)
+4. [RSL-SQL: Robust Schema Linking in Text-to-SQL Generation](https://arxiv.org/abs/2411.00073)
+5. [Getting AI to write good SQL: Text-to-SQL techniques explained](https://cloud.google.com/blog/products/databases/techniques-for-improving-text-to-sql)
+6. [ReFoRCE: A Text-to-SQL Agent with Self-Refinement, Consensus Enforcement, and Column Exploration](https://arxiv.org/pdf/2502.00675)
