@@ -22,7 +22,7 @@ Kada spomenem ljudima da radim na virtualnom asistentu, njihov pogled obično ka
     <img src="/assets/images/nl2sql-flow.png" alt="NL2SQL Flow Diagram">
   </a>
 </p>
-<p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.<br> <strong>Klikni na sliku za uvećanje</strong></em></p>
+<p align="center"><em>Slika: Dijagram toka hibridnog NL2SQL sistema. Od korisničkog pitanja do odgovora ili akcije.<br> <strong>Klikni na sliku i zumiraj</strong></em></p>
 
 Ideja je da konceptualno objasnim strukturu projekta, koji na osnovu prirodnog i ljudskog pitanja izvršava naredbe i odgovara. I to služeći se internom bazom podataka. Sve to sam naučio za šest meseci bakćajući se sa NLP-om, embeddings-ima, LLM-ovima, halucinacijama... i jednim modelom koji se ponekad ponaša kao da je na rekreativnoj LSD dozi.
 
